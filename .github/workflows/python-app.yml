@@ -36,6 +36,9 @@ jobs:
           context: .
           file: ./Dockerfile  # adjust the path if necessary
           push: true
+          tags: |
+            yourusername/your-repo-name:latest
+            yourusername/your-repo-name:${{ github.sha }}
 
       - name: Post Cache Docker layers
         uses: actions/cache@v2
