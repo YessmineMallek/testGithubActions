@@ -43,7 +43,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/flask-docker:latest
+          tags: ${{ secrets.DOCKERHUB_TOKEN }}/flask-docker:latest
 
       - name: Post Cache Docker layers
         uses: actions/cache@v2
