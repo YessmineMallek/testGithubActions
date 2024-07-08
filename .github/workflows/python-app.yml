@@ -39,8 +39,8 @@ jobs:
           file: ./Dockerfile  # adjust the path if necessary
           push: true
           tags: |
-            yourusername/your-repo-name:latest
-            yourusername/your-repo-name:${{ github.sha }}
+            yessminemallek/your-repo-name:latest
+            yessminemallek/your-repo-name:${{ github.sha }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
