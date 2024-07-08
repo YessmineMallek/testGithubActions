@@ -39,7 +39,6 @@ jobs:
           tags: |
             yourusername/your-repo-name:latest
             yourusername/your-repo-name:${{ github.sha }}
-
       - name: Post Cache Docker layers
         uses: actions/cache@v2
         with:
